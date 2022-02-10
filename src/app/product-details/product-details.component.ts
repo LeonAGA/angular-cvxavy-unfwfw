@@ -17,7 +17,7 @@ export class ProductDetailsComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
 
-    //Find the product that corredpond with the id provided in the route.
+    //Find the product that correspond with the id provided in the route.
     this.product = products.find(p => p.id === productIdFromRoute);
   }
 
